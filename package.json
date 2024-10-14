@@ -1,0 +1,12 @@
+{
+  "nome": "prova_Oficinas",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "/src/app.js",
+  "author": "titi",
+  "liscense": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "mongoose": "^8.7.1"
+  }
+}
