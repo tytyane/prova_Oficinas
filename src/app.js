@@ -8,7 +8,7 @@ import maintenance_route from "./routes/maintenance_route.js"
 dotenv.config()
 connectDB()
 
-const PORT = process.env.API_PORT || 3000
+const port = process.env.PORT || 3000
 const app = express()
 app.use(express.json())
 
@@ -16,6 +16,6 @@ app.use('/oficina', workshop_route)
 app.use('/veiculo', vehicle_route)
 app.use('/manutencao', maintenance_route)
 
-app.listen(process.env.API_PORT, () => console.log(`Servidor rodando na porta ${PORT}`))
+app.listen(port, () => console.log(`Servidor rodando na porta ${port}`))
 
 export default app
