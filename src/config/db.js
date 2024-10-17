@@ -5,7 +5,7 @@ const connectDB = async () => {
         await mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.CLUSTER_ADDRESS}/${process.env.DB_NAME}`)
         console.log('MongoDB conectado om sucesso!')
     } catch(error){
-        console.erro('Erro ao conectar ao MongoDB:', error)
+        console.error('Erro ao conectar ao MongoDB:', error)
     }
 }
 
